@@ -1,0 +1,913 @@
+<!doctype html>
+<html>
+    <head>
+       <title> Multimedia Development — Text </title>
+	   <meta name="viewport" content="width=device-width, initial-scale=1">
+	 
+		<style>
+			*{
+			box-sizing: border-box;}
+			
+			body{
+			margin: 0;
+			background-color: white;}
+			 
+			nav{
+			float: left;
+			width: 15%;
+			height: auto;
+			background: white;
+			padding-top: 15px;
+			padding-left: 12px;
+			padding-right: 12px;
+			}
+			
+			img.logo{
+			display: block;
+			margin-top: 1em;
+			margin-bottom: -1em;
+			margin-left: 0.4em;
+			margin-right: auto;
+			width: 150px;}
+			
+			
+			a.una:link {
+			color: #3366CC;
+			background-color: transparent;
+			text-decoration: none;}
+
+			a.una:visited {
+			color: #3366CC;
+			background-color: transparent;
+			text-decoration: none;}
+
+			a.una:hover {
+			color: #3366CC;
+			background-color: transparent;
+			text-decoration: underline;}
+
+			a.una:active {
+			color: #3366CC;
+			background-color: transparent;
+			text-decoration: underline;}
+				
+			ul{
+			list-style-type: none;
+			padding: 0;
+			font-family: arial;
+			font-size: 12px;
+			margin-left: 0.8em;}
+			
+			li{
+			margin-bottom: 0.3em;}
+
+			article{
+			float: left;
+			padding: 20px;
+			margin-top: 4em;
+			margin-right: -2em;
+			width: 85%;
+			background-color: white;
+			height: auto;
+			border-style: solid;
+			border-width: 1px;
+			border-bottom-color: #A7D7F9;
+			border-top-color: white;
+			border-right-color: white;
+			border-left-color: #A7D7F9;}
+			
+			table{
+			margin-top: 1em;
+			margin-bottom: 1em;
+			border-collapse: collapse;
+			border: 0.3px solid gray;
+			padding: 10px;
+			width: 300px;
+			height: auto;}
+			
+				
+			th{
+			padding-right: 10px;
+			padding: 5px;
+			border-collapse: collapse;
+			text-align: left;}
+			
+			.header{
+			border: 1px solid gray;
+			background-color: #DDCEF2;
+			height: 27px;
+			display: block;
+			}
+			
+			.div1{
+			height: auto;
+			padding: 10px;
+			display: block;
+			}
+			
+			.div2{
+			height: auto;
+			padding: 10px;
+			display: block-inline;
+			width: 60%;
+			float: left;
+			margin-top: 0em;}
+			
+			.div2 ol{ counter-reset: item; }
+			.div2 li{ display: block; }
+			.div2 li:before { content: counters(item, ".") " "; counter-increment: item; }
+			
+			.div4{
+			height: auto;
+			padding: 10px;
+			display: block-inline;
+			float: right;
+			width: 40%;
+			margin-top: 0em;}
+			
+			img.ftpic{
+			width: 350px;
+			position: relative;
+			display: block-inline;
+			border: 2px solid gray;
+			padding: 3px;
+			margin-bottom: 1em;}
+			
+			img.textss{
+			width: 600px;
+			position: relative;
+			display: block-inline;
+			border: 2px solid gray;
+			padding: 3px;
+			margin-top: 0.5em;
+			margin-bottom: 1em;
+			}
+			
+			img.textkt{
+			width: 450px;
+			position: relative;
+			display: block-inline;
+			border: 2px solid gray;
+			padding: 3px;
+			margin-top: 0.5em;
+			margin-bottom: 1em;
+			}
+			
+			img.textclass{
+			width: 1050px;
+			position: relative;
+			display: block-inline;
+			border: 2px solid gray;
+			padding: 3px;
+			margin-top: 0.5em;
+			margin-bottom: 1em;
+			}
+			
+			
+			
+			
+			.div3{
+			height: auto;
+			padding: 10px;
+			display: block;
+			margin-top: 0em;
+			}
+			
+	
+			
+			/* Clear floats after the columns */
+			
+			section:after{
+			content: "";
+			display: table;
+			clear: both;}	
+						
+			footer{
+			float: right;
+			width: 86%;
+			background-color: white;
+			padding: 10px;
+			text-align: center;
+			color: black;}
+			
+			
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			
+			@media (max-width: 600px){
+			nav, article {
+			width: 100%;
+			height: auto;
+			
+			
+			
+			
+			
+			
+		</style>	
+	<head>
+	
+	<body>
+	
+		<section>
+		  <nav>
+		
+			<img class = "logo" src="1.png">
+			<h5 style = "font-size: 30px; font-family: garamond; color: #042F67; display: inline; margin-left: 0.7em; margin-right: -1em; margin-top: 0em;margin-bottom: 0em; ">M</h5>
+			<h5 style = "font-size: 15px; font-family: garamond;display: inline; margin-left: 1.7em; margin-top: -1em;margin-bottom:0em; color: #042F67;">ULTIMEDIA </h5>
+			<h5 class = "first" style = "font-family: garamond; font-size: 13px; margin-top: 0em; margin-left: 2em;margin-top: -0.5em;color: #042F67;"> DEVELOPMENT </h5>
+		    
+			<br>
+			<ul>
+			  <li><a class = "una" href="index.html">Index</a> / <a class = "una" href="mainpage.html">Main Page</a></li> 
+			</ul>
+			
+			
+			
+		   <p style = "font: 13px arial; color: black; font-weight: 100; margin-left: 0.8em; margin-bottom: -1em;margin-top: 2em;"> Chapter 1:<br>Introduction to Multimedia </p>
+			
+			<ul>
+			  <hr style = "border: 0.5px solid gray; margin-left: -1em;">
+			  <li><a class = "una" href="page1.html#lec1">What is Multimedia?</a></li>
+			  <li><a class = "una" href="page1.html#lec2">Definition of Terms</a></li>
+			  <li><a class = "una" href="page1.html#lec3">Where to Use Multimedia?</a></li>
+			  <li><a class = "una" href="page1.html#lec4">5 Elements of Multimedia</a></li>
+			  <li><a class = "una" href="page1.html#lec5">Interactive Multimedia</a></li>
+			  <li><a class = "una" href="page1.html#lec6">Linear vs Non-Linear</a></li>
+			  <li><a class = "una" href="page1.html#lec7">Authoring Tools</a></li>
+			  <li><a class = "una" href="page1.html#lec8">Importance of Multimedia</a></li>
+			  <li><a class = "una" href="page1.html#lec9">Multimedia Products</a></li>
+			  <li><a class = "una" href="page1.html#lec10">Delivering Multimedia</a></li>
+			</ul>
+			<br>
+			
+			
+			<p style = "font: 13px arial; color: black; font-weight: 100; margin-left: 0.8em; margin-bottom: -1em;">Chapter 2: Text </p>
+			
+			<ul>
+			  <hr style = "border: 0.5px solid gray; margin-left: -1em;">
+			  <li><a class = "una" href="page2.html#lec21">Introduction of Text</a></li>
+			  <li><a class = "una" href="page2.html#lec22">The Power of Text</a></li>
+			  <li><a class = "una" href="page2.html#lec23">Text Elements</a></li>
+			  <li><a class = "una" href="page2.html#lec24">Types of Text</a></li>
+			  <li><a class = "una" href="page2.html#lec25">Fonts and Typefaces</a></li>
+			  <li><a class = "una" href="page2.html#lec26">Font Terminology</a></li>
+			  <li><a class = "una" href="page2.html#lec27">Classification of Fonts</a></li>
+			  <li><a class = "una" href="page2.html#lec28">Font Styles</a></li>
+			  <li><a class = "una" href="page2.html#lec29">Font Types</a></li>
+			  <li><a class = "una" href="page2.html#lec301">Bitmapped and Vector Fonts</a></li>
+			  <li><a class = "una" href="page2.html#lec311">Tracking and Kerning</a></li>
+			  <li><a class = "una" href="page2.html#lec321">Font Mapping</a></li>
+			  <li><a class = "una" href="page2.html#lec331">Guidelines of Choosing Fonts</a></li>
+			  <li><a class = "una" href="page2.html#lec341">Efficient Use of Text</a></li>
+			</ul>
+			<br>
+			
+			<p style = "font: 13px arial; color: black; font-weight: 100; margin-left: 0.8em; margin-bottom: -1em;">Chapter 3: Image </p>
+			
+			<ul>
+			  <hr style = "border: 0.5px solid gray; margin-left: -1em;">
+				<li><a class = "una" href="page3.html#lec31">Multimedia Images</a></li>
+				<li><a class = "una" href="page3.html#lec32">Bitmap</a></li>
+				<li><a class = "una" href="page3.html#lec33">Vector Drawn Images</a></li>
+				<li><a class = "una" href="page3.html#lec34">Bitmaps v/s Vector Images</a></li>
+				<li><a class = "una" href="page3.html#lec35">3-D Images</a></li>
+				<li><a class = "una" href="page3.html#lec36">Colors</a></li>
+				<li><a class = "una" href="page3.html#lec37">Image File Type used in Multimedia</a></li>
+				<li><a class = "una" href="page3.html#lec38">Information Delivery</a></li>
+			</ul>
+			<br>
+		  </nav>
+	  
+		  <article>
+			<div class = "div1">
+				<h1 style = "font-family: times new roman; font-size: 35px; font-weight: 200; margin-bottom: 0em; margin-top: 0em;"> Chapter 2: Text </h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-top: 0em;" >
+				Source: "Multimedia:  Making It Work."</p>
+				</div>
+			
+			<div class ="div2">
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-bottom: 0em;"> <b>Objectives</b></p>
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-top: 0.5em; margin-bottom: 3em;">
+				○ Recognize the importance of word choice<br>
+				○ Describe the difference between a typeface and a font and list at least three attributes of a font, 
+				&nbsp;&nbsp;&nbsp;for example, upper/lowercase, serif/sans serif, PostScript/ TrueType/OpenType 
+				<br>
+				○ Discuss the importance of text and the ways in which text can be leveraged in multimedia 
+				&nbsp;&nbsp;&nbsp;presentations 
+                <br>
+				
+				○ Discuss the presentation of text on Windows and Macintosh platforms <br>
+				○ Find sources for free and shareware fonts <br>
+				○ Define hypermedia, hypertext, links, anchors, and nodes and be able to discuss both the 
+				&nbsp;&nbsp;&nbsp;potential and limitations of hypertext and hyperlinking system<br>
+
+			</div>	
+			
+			
+			<div class = "div4">
+				<center><img class = "ftpic" src="text1.gif"></center>
+				<center><img class = "ftpic" src="text2.gif"></center>
+			</div>
+				
+				
+				
+				
+				
+				</p>
+				
+				
+				<table>
+				  <tr>
+					<th>
+					<p style = "font-family: arial; font-size: 12px; color: black; font-weight: 300; font-weight: bold; text-align: center;"> Contents
+					
+						<ol style = "font-family: arial; font-size: 12px; text-align: left; margin-left: 0em; font-weight: 100">
+						 <li><a class = "una" href="page2.html#lec21">Introduction of Text</a></li>
+						 <li><a class = "una" href="page2.html#lec22">The Power of Text</a></li>
+						 <li><a class = "una" href="page2.html#lec23">Text Elements</a></li>
+						 <li><a class = "una" href="page2.html#lec24">Types of Text</a>
+							<ol>
+								<li><a class = "una" href="#type1">Hypertext</li>
+								<li><a class = "una" href="#type2">Pop-up Messages</li>
+								<li><a class = "una" href="#type3">Drop-down Boxes</li>
+								<li><a class = "una" href="#type4">Scroll Bars</li>
+								<li><a class = "una" href="#type5">Buttons for Interaction</li>
+								<li><a class = "una" href="#type6">Symbols and Icons</li>
+							</ol>
+						 </li>
+						 
+						 <li><a class = "una" href="page2.html#lec25">Fonts and Typefaces</a></li>
+						 <li><a class = "una" href="page2.html#lec26">Font Terminology</a></li>
+						 <li><a class = "una" href="page2.html#lec27">Classification of Fonts</a></li>
+						 <li><a class = "una" href="page2.html#lec28">Font Styles</a></li>
+						 <li><a class = "una" href="page2.html#lec29">Font Types</a>
+							<ol>
+								<li><a class = "una" href="#serif">Serif</li>
+								<li><a class = "una" href="#sanserif">Sans Serif</li>
+							</ol>
+						 </li>
+						 
+						 <li><a class = "una" href="page2.html#lec301">Bitmapped and Vector Fonts</a></li>
+						 <li><a class = "una" href="page2.html#lec311">Tracking and Kerning</a></li>
+						 <li><a class = "una" href="page2.html#lec321">Font Mapping</a></li>
+						 <li><a class = "una" href="page2.html#lec331">Guidelines of Choosing Fonts</a></li>
+						 <li><a class = "una" href="page2.html#lec341">Efficient Use of Text</a></li>
+						</ol>
+					</p>
+					
+					</th>
+				  </tr>
+			</table>
+				
+				
+			</div>
+				
+			<div class = "div3">	
+				<h1 id = "lec21" style = "font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; display: block"> 
+				Introduction of Text </h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;">
+				
+				<b>Text</b>  is  obviously  the  simplest  of  data  types  and  requires  the  least  amount  of  storage.
+				Text in the form of words, sentences, and paragraphs is used to communicate thoughts, ideas, and facts in daily life.
+				Text  may  not  be  as  visually  exciting  as  some  of  the  other  media  types,  but  it  often  conveys  essential  and  precise  information.
+				<br><br>
+				
+				Multimedia applications depend on text for many things including:
+				</p>
+				
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+					<li>Page titles</li>
+					<li>Delivering information in form of multiple sentences/paragraphs</li>
+					<li>Labels for pictures</li>
+					<li>Instructions for operating the application</li>
+				</ul>
+				
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;">
+				
+				Text is probably the most common form of information delivery.
+				<br><br><br>
+				
+				The power of meaning:
+				
+				</p>
+				
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+					<li>Term “HOME”, “QUIT”, “REFRESH”, “HELP”, “RECYCLE BIN” etc..</li>
+				</ul>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;">
+				<br>
+				The power and Irregularity of English:
+				
+				</p>
+				
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+					<li>1 Billion people used for their main, second and third language.</li>   
+					<li>Type of English (written and spoken)
+					<li>SMS and Tweeter language : English acronym and Instant messaging jargon : FAQ, FB, IMO, XOXO, NME</li>
+				</ul>
+	
+
+				<h1 id = "lec22" style = "display: block; font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; margin-top: 3em;"> 
+				The Power of Text </h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;">
+				
+				Reading and writing are expected and necessary skills within most modern cultures.
+				Text and the ability to read it are doorways to power and knowledge.
+				With the World Wide Wed, text has become more important than ever.
+				The native language for the web is HTML(Hypertext Markup Language).<br><br>
+
+
+				Today’s poets and songwriters concentrate text by distilling lengthy prose into few words heavy with meaning. 
+				Advertising wordsmiths render the meaning of entire product lines into an evocative single word, logo, or tag line. 
+				Multimedia authors weave words, symbols, sounds, and images, and then blend text into the mix to create integrated tools and interfaces for acquiring, displaying, and disseminating messages and data.
+				Words and symbols in any form, spoken or written, are the most common system of communication.<br><br>
+
+
+							
+				In multimedia it is important to cultivate accuracy in words you choose. Words will appear in:
+				
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+					<li>Titles</li>				
+					<li>Menus</li>
+					<li>Navigation aids</li>
+					<li>Narrative or content</li>
+				</ul>  
+				
+				</p>
+
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;">
+				
+				Be precise and consistent when designing labels for title screens, menus and buttons.
+
+				</p>
+			
+		
+				<h1 id = "lec23" style = "display: block;font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; margin-top: 3em;"> 
+				Text Elements </h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+					
+					
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;">
+					
+				<b>Alphabet characters</b>
+				
+				</p>
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >				
+					<li>A – Z and a – z </li>
+				</ul>
+			
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;">
+	
+				<b>Numbers</b>
+				
+				</p>
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+					<li>0 – 9 </li>
+				</ul>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;">
+				
+				<b>Special characters</b>
+				
+				</p>
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >			
+					<li>Punctuation (. ,  ; “ ‘ ! : -  /)</li>
+					<li> Signs ($ + - = @ # % ^ & *)</li>
+				</ul>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;">
+				
+				<b>Text can be captured in following ways:</b>
+				
+				</p>
+				
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >			
+					<li>Keyboard</li>
+					<li>Mouse</li>
+					<li>Scanner (OCR) – Optical Character Recognization*<br>
+						*designed to translate images of handwritten or typewritten text (usually captured by a scanner) into machine-editable text.</li>
+				</ul>			
+							
+
+
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<h1 id = "lec24" style = "display: block;font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; margin-top: 3em;"> 
+				Types of Text</h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				
+				<ol style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-top: 1em;" >
+					<b><li id = "type1">Hypertext </li></b>
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;">
+							<li>It enables the integrated set of documents (each comprising formatted text) to be created which have defined linkages between them.</li>
+							<li>Hypertext is a type of formatted text that enables a related set of documents, normally referred to as pages, to be created which have defined linkage points, referred to as hyperlinks, between each other.</li>
+							<li>Linking a hypertext or hot word / hotspot to another part of the title that displays more text.</li>
+							<li>Very effectively used to retrieve info from databases.</li>
+							<li>Helps user in decision making.</li>
+							<li>User can process information faster and strategically.</li>
+						</ul>
+					<br><br>
+					
+					
+					<b><li id = "type2">Pop-up Messages </li></b>	
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;">
+							<li>Another type of Hot word used to save space</li>
+							<li>Click on a hot word or a text, a small message pops up explaining in brief about the hot word</li>
+							<li>Remains for some time and vanishes after programmed duration or by a mouse click</li>
+						</ul>
+					<br><br>
+					
+					<b><li id = "type3">Drop-down Boxes </li></b>	
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;">
+							<li>Gives the user a set of choices and reduces his strain of decision making</li>
+							<li>That is making choice in a easier way and limited according to the system’s capabilities</li>
+							<li>Choosing may lead to another page with text or may retrieve info from database</li>
+						</ul>
+					<br><br>
+					
+														
+					<b><li id = "type4">Scroll Bars </li></b>	
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;">
+							<li>Usually not a good practice to use scroll bars</li>
+							<li>Mostly irritates the user</li>
+							<li>Important messages should not be posted using scrollbars, since the user may not notice it</li>
+						</ul>
+					<br><br>
+					
+	
+					<b><li id = "type5">Buttons </li></b>	
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;">
+							<li>The concept of hyper linking remains the same</li>
+							<li>Change in appearance by using a button with text to glow on it rather than using a hyper text</li>
+						</ul>
+					<br><br>
+						
+							
+					<b><li id = "type6">Symbols and Icons </li></b>	
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;">
+							<li>Symbols </li>
+								<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: square; margin-top: 0.4em; margin-left: 2em;">
+									<li>Concentrated text in the form of stand alone graphic constructs.</li>
+									<li>Convey meaningful messages.</li>
+									<li>Need to be learn and advice to use a standard symbols.</li>
+								</ul>	
+							</ul>
+					<br><br>
+				</ol>
+					
+				
+				<h1 id = "lec25" style = "display: block;font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; margin-top: 3em;"> 
+				Font and Typefaces</h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;">
+					
+				<b>Typeface</b>
+				
+				</p>
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >				
+					<li>Graphic representation or the shape of characters.</li>
+					<li>A typeface is a family of related fonts</li>
+					<li>Example: Bookman Old Style</li>
+				</ul><br>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;">
+					
+				<b>Font</b>
+				
+				</p>
+				
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >					
+					<li>Collection of characters of different sizes and styles of a typeface.</li>
+					<li>Example: Arial 18 point Bold</li>
+				</ul><br>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;">
+					
+				<b>Font Styles</b>
+				
+				</p>
+	
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >					
+					<li>Bold, Italic and Underline</li>
+				</ul><br>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;">
+					
+				<b>Font Size</b>
+				
+				</p>
+				
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >					
+					<li>Expressed in point</li>
+					<li>Example: Arial 18 (x)</li>
+				</ul><br>
+				
+				
+					
+				
+	
+				<h1 id = "lec26" style = "display: block;font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; margin-top: 3em;"> 
+				Font Terminology</h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >					
+					<li><b>Baseline</b> – the line on which the bases of characters are arranged</li>
+					<li><b>Leading</b> – the distance between successive baselines</li>
+					<li><b>x-height</b> – the distance between the baseline and the top of a lower-case letter x</li>
+					<li><b>Ascenders/descenders</b> – strokes that rise above the x-height/drop below the baseline</li>
+					<li><b>Kerning</b> – adjustment of space between certain pairs of letters (e.g. AV) to make them look more uniform</li>
+					<li><b>Tracking</b> - Spacing between characters.</li>
+					<li><b>Serif</b> - Flag or decoration at the end of a character stroke.</li>
+					<li><b>Regular, Condensed and Expanded</b> – the body width of the font.</li>
+					<li><b>Cases:</b> upper and lower.  BALL vs ball</li>
+					<li><b>Case Sensitive:</b> exactly matched</li>
+				</ul>
+
+
+
+				
+				<h1 id = "lec27" style = "display: block;font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; margin-top: 3em;"> 
+				Classification of Fonts</h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;">
+			
+				<b id = "class1">Spacing:</b> monospaced (fixed width)/proportional <br><br>
+				<b id = "class2">Serifs:</b> serifed/sans serif </p>
+					<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;">
+						<li>Serifs are the small strokes added to the ends  of character 
+							shapes in conventional book fonts</li>
+					</ul>
+					
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;">
+				<b id = "class3">Shape:</b> upright/italic/slanted </p>
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;">
+							<li>Slant is a vertical shear effect, italic uses different glyph shapes 
+								with a slant</li>
+						</ul>
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;">
+					
+					<b id = "class4">Weight:</b> bold/normal/light </p>
+				
+			</p>
+			
+			<center><img class = "textclass" src="textclass.jpg"></center>
+	
+
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<h1 id = "lec28" style = "display: block; font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; margin-top: 3em;"> 
+				Font Styles</h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				<ol style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-top: 0.4em; list-style-type: circle; margin-left: -1em;">
+					<li>Bold, Italic, Underline, Strikethrough, superscript or subscript, embossed or shadow.</li>
+					<li>Colours.</li>
+					<li>Some common fonts used today include: </li>
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: square; margin-top: 0.4em; margin-left: 2em;">
+							<li>Arial (or Helvetica) - A sans serif font</li>
+							<li>Times New Roman (or Times Roman) - A serif font</li>
+							<li>Courier New (or Courier) - A monospaced font (all characters have the same width)
+								Refer to microsoft word.</li>
+						</ul>	
+				</ol>
+		
+				
+				
+				
+				<h1 id = "lec29" style = "display: block;font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; margin-top: 3em;"> 
+				Font Types</h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;">
+				Fonts can broadly be said to be of one of two types: <b id = "serif"> serif </b> or <b id = "sanserif">sans serif</b>.
+				A serif is the decorative ‘bit’ at the end of a letter stroke
+				Serif fonts have them and sans serif fonts don’t (‘sans’ being French for ‘without’).
+				Serif fonts are usually used for printed media or documents that have large quantities of text.
+				This is because the serif helps guide the reader’s eye along the line.				
+				Sans Serif fonts are considered better for computer displays because of the sharper contrast.
+				
+				</p>				
+				
+				<center><img class = "textss" src="textserif.jpg"></center>
+								
+				
+				<h1 id = "lec301" style = "display: block;font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; margin-top: 3em;"> 
+				Bitmapped and Vector Fonts</h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-bottom: -1em;">
+				<b>Computer and Text</b>
+				</p>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-top: 1.2em; margin-bottom: 2em;">
+				
+				This is a set of characters that are available in the ASCII (American Standard Code for Information Interchange) character set. This is one of the most widely used character sets and the table includes the binary codeword used to represent each character.
+				
+				</p>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-bottom: -1em;">
+				
+				<b>ASCII Code</b><br>
+				</p>
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-top: 1.2em; margin-bottom: 2em;">
+				
+				Each character is represented by a unique 7-bit binary codeword, meaning that there are 128 (27) alternative characters.
+
+				In addition to all normal alphabetic, numeric and punctuation characters, the total ASCII character set also includes control characters such as BS (backspace), DEL (delete), etc.
+				
+				<br>
+				<br>
+				</p> 
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-bottom: -1em;">
+				
+				<b>Extended Character Set (ISO Latin-1)</b><br>
+				</p>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-top: 1.2em; margin-bottom: 2em;">
+				
+				Extra 1 bit in ASCII is filled with ANSI  (American National Standards Institution) characters (256 characters)
+
+				<br>
+				<br>
+				</p>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-bottom: -1em;">
+				
+				<b>Unicode</b><br>
+				
+				</p>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-top: 1.2em; margin-bottom: 2em;">
+				
+				Unicode is the universal standard for multi language characters published by Unicode Consortium.
+				Unicode 4.0 standard covers 96,382 characters using 16 bits uniform encoding.
+				Unicode can support a wide variety of non-Roman alphabets including Han Chinese, Japanese, Arabic, Korean, Bengali, and so on.
+				</p>
+
+				
+
+
+				
+				
+				
+				
+				
+				<h1 id = "lec311" style = "display: block;font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; margin-top: 3em;"> 
+				Tracking and Kerning</h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;">
+			
+					
+				<center><img class = "textkt" src="textkt.jpg"></center>
+				<center><img class = "textkt" src="textkt1.jpg"></center>
+				
+				</p>
+				
+				<h1 id = "lec321" style = "display: block;font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; margin-top: 3em;"> 
+				Font Mapping</h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;">	
+					<li>Some fonts installed in your machine may not be available in other user’s machine.</li>
+					<li>If the fonts that you used is not available in other people’s computer, a default font will be used for substitution.</li>
+					<li>Specifying which font to be substitution is called <b>Font Mapping</b>.</li>
+				</ul>
+				
+								
+							
+				
+				
+				<h1 id = "lec331" style = "display: block;font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; margin-top: 3em;"> 
+				Guidelines of Choosing Fonts</h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-bottom: -1em;">
+				
+				<b>Meaningful words</b>
+				
+				</p>
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 1.5em; margin-left: 2em; margin-bottom: 0em;">	
+					<li>Text is use for titles and headlines, menus, navigation, and content.</li>
+					<li>Too much text – crowded or ‘busy’ screen.</li>
+					<li>Too little text – too many page.</li>
+					<li>Words must be chosen carefully.</li>
+				</ul>
+					
+				<br>	
+					
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-bottom: -1em">
+				
+				<b>Guideline of choosing fonts</b>
+				
+				</p>
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 1.5em; margin-left: 2em;">	
+					<li>For small type, do not use decorative fonts because in small size they are unreadable.</li>
+					<li>Use as few typefaces as possible but you can vary the size and style using italic or bold.</li>
+					<li>Adjust the leading or line spacing where you have a lot of text for easier reading.</li>
+					<li>Vary the size of a font according to the importance of the message you are delivering.</li>
+					<li>Use bold or emphasize text to highlight ideas or concept.</li>
+					<li>In large headlines, adjust the spacing between letters (kerning) so that the spacing feels right.</li>
+					<li>Use anti-aliasing for big fonts but turn off anti-aliasing for small fonts.</li>
+					<li>Surround headlines with white space.</li>
+					<li>Distinguish text links with colors and underlining.</li>
+					<li>Use drop caps and initial caps.</li>
+				</ul>	
+
+
+				
+				
+				<h1 id = "lec341" style = "display: block;font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; margin-top: 3em;"> 
+				Efficient Use of Text</h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;">
+				Positive ways to communicate message by less text and other ways are
+				</p> 
+				<ol style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-top: 1em;" >
+					<li>Hypertext</li>
+					<li>Pop-up Messages</li>
+					<li>Drop-down Boxes</li>
+					<li>Scroll Bars</li>
+					<li>Buttons for Interaction</li>
+					<li>Symbols and Icons</li>
+				</ol>
+
+
+
+
+
+
+				
+		
+				
+				
+				</div>
+				
+				
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</div>
+					  
+					  
+		  
+		  
+		  
+		  
+		  
+		  </article>
+		</section>
+
+	<footer>
+	  <b><p style = "font-size: 12px; font-family: arial; color: #3366CC ; text-align: center; margin-top: 0em; word-spacing: 2px;">TONIE ANNE C. MARTINEZ / ITC29 / 302I / 10:30AM - 1:30PM  </p></b>
+	</footer>
+
+	<body>
+<html>	
+	

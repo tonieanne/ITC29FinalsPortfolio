@@ -1,0 +1,1059 @@
+<!doctype html>
+<html>
+    <head>
+       <title> Multimedia Development — Image </title>
+	   <meta name="viewport" content="width=device-width, initial-scale=1">
+	 
+		<style>
+			*{
+			box-sizing: border-box;}
+			
+			body{
+			margin: 0;
+			background-color: white;}
+			 
+			nav{
+			float: left;
+			width: 15%;
+			height: auto;
+			background: white;
+			padding-top: 15px;
+			padding-left: 12px;
+			padding-right: 12px;
+			}
+			
+			img.logo{
+			display: block;
+			margin-top: 1em;
+			margin-bottom: -1em;
+			margin-left: 0.4em;
+			margin-right: auto;
+			width: 150px;}
+			
+			
+			a.una:link {
+			color: #3366CC;
+			background-color: transparent;
+			text-decoration: none;}
+
+			a.una:visited {
+			color: #3366CC;
+			background-color: transparent;
+			text-decoration: none;}
+
+			a.una:hover {
+			color: #3366CC;
+			background-color: transparent;
+			text-decoration: underline;}
+
+			a.una:active {
+			color: #3366CC;
+			background-color: transparent;
+			text-decoration: underline;}
+				
+			ul{
+			list-style-type: none;
+			padding: 0;
+			font-family: arial;
+			font-size: 12px;
+			margin-left: 0.8em;}
+			
+			li{
+			margin-bottom: 0.3em;}
+
+			article{
+			float: left;
+			padding: 20px;
+			margin-top: 4em;
+			margin-right: -2em;
+			width: 85%;
+			background-color: white;
+			height: auto;
+			border-style: solid;
+			border-width: 1px;
+			border-bottom-color: #A7D7F9;
+			border-top-color: white;
+			border-right-color: white;
+			border-left-color: #A7D7F9;}
+			
+			table{
+			margin-top: 1em;
+			margin-bottom: 1em;
+			border-collapse: collapse;
+			border: 0.3px solid gray;
+			padding: 10px;
+			width: 300px;
+			height: auto;}
+			
+				
+			th{
+			padding-right: 10px;
+			padding: 5px;
+			border-collapse: collapse;
+			text-align: left;}
+			
+			.header{
+			border: 1px solid gray;
+			background-color: #DDCEF2;
+			height: 27px;
+			display: block;
+			}
+			
+			.div1{
+			height: auto;
+			padding: 10px;
+			display: block;
+			}
+			
+			.div2{
+			height: auto;
+			padding: 10px;
+			display: block-inline;
+			width: 53%;
+			float: left;
+			margin-top: 0em;}
+			
+			.div2 ol{ counter-reset: item; }
+			.div2 li{ display: block; }
+			.div2 li:before { content: counters(item, ".") " "; counter-increment: item; }
+			
+			img.imgtype{
+			width: 450px;
+			position: relative;
+			display: block-inline;
+			border: 2px solid gray;
+			padding: 3px;
+			margin-top: 0.5em;
+			margin-bottom: 1em;
+			}
+			
+			img.imgmorph{
+			width: 900px;
+			position: relative;
+			display: block-inline;
+			border: 2px solid gray;
+			padding: 3px;
+			margin-top: 0.5em;
+			margin-bottom: 1em;
+			}
+			
+			img.imgcolor{
+			width: 600px;
+			position: relative;
+			display: block-inline;
+			border: 2px solid gray;
+			padding: 3px;
+			margin-top: 0.5em;
+			margin-bottom: 1em;
+			}
+			
+			img.imgexample{
+			width: 450px;
+			position: relative;
+			display: block-inline;
+			border: 2px solid gray;
+			padding: 3px;
+			margin-top: 0.5em;
+			margin-bottom: 1em;
+			}
+			
+			.div4{
+			height: 870px;
+			padding: 10px;
+			display: block-inline;
+			float: right;
+			width: 47%;
+			margin-top: 0em;}
+			
+			img.ftpic{
+			width: 450px;
+			position: relative;
+			display: block-inline;
+			border: 2px solid gray;
+			padding: 3px;
+			margin-bottom: 1em;}
+			
+			.div3{
+			height: auto;
+			padding: 10px;
+			display: block;
+			margin-top: 0em;
+			}
+			
+	
+			
+			/* Clear floats after the columns */
+			
+			section:after{
+			content: "";
+			display: table;
+			clear: both;}	
+						
+			footer{
+			float: right;
+			width: 86%;
+			background-color: white;
+			padding: 10px;
+			text-align: center;
+			color: black;}
+			
+			
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			
+			@media (max-width: 600px){
+			nav, article {
+			width: 100%;
+			height: auto;
+			
+			
+			
+			
+			
+			
+		</style>	
+	<head>
+	
+	<body>
+	
+		<section>
+		  <nav>
+		
+			<img class = "logo" src="1.png">
+			<h5 style = "font-size: 30px; font-family: garamond; color: #042F67; display: inline; margin-left: 0.7em; margin-right: -1em; margin-top: 0em;margin-bottom: 0em; ">M</h5>
+			<h5 style = "font-size: 15px; font-family: garamond;display: inline; margin-left: 1.7em; margin-top: -1em;margin-bottom:0em; color: #042F67;">ULTIMEDIA </h5>
+			<h5 class = "first" style = "font-family: garamond; font-size: 13px; margin-top: 0em; margin-left: 2em;margin-top: -0.5em;color: #042F67;"> DEVELOPMENT </h5>
+		    
+			<br>
+			<ul>
+			  <li><a class = "una" href="index.html">Index</a> / <a class = "una" href="mainpage.html">Main Page</a></li> 
+			</ul>
+			
+			
+			
+		   <p style = "font: 13px arial; color: black; font-weight: 100; margin-left: 0.8em; margin-bottom: -1em;margin-top: 2em;"> Chapter 1:<br>Introduction to Multimedia </p>
+			
+			<ul>
+			  <hr style = "border: 0.5px solid gray; margin-left: -1em;">
+			  <li><a class = "una" href="page1.html#lec1">What is Multimedia?</a></li>
+			  <li><a class = "una" href="page1.html#lec2">Definition of Terms</a></li>
+			  <li><a class = "una" href="page1.html#lec3">Where to Use Multimedia?</a></li>
+			  <li><a class = "una" href="page1.html#lec4">5 Elements of Multimedia</a></li>
+			  <li><a class = "una" href="page1.html#lec5">Interactive Multimedia</a></li>
+			  <li><a class = "una" href="page1.html#lec6">Linear vs Non-Linear</a></li>
+			  <li><a class = "una" href="page1.html#lec7">Authoring Tools</a></li>
+			  <li><a class = "una" href="page1.html#lec8">Importance of Multimedia</a></li>
+			  <li><a class = "una" href="page1.html#lec9">Multimedia Products</a></li>
+			  <li><a class = "una" href="page1.html#lec10">Delivering Multimedia</a></li>
+			</ul>
+			<br>
+			
+			
+			<p style = "font: 13px arial; color: black; font-weight: 100; margin-left: 0.8em; margin-bottom: -1em;">Chapter 2: Text </p>
+			
+			<ul>
+			  <hr style = "border: 0.5px solid gray; margin-left: -1em;">
+			  <li><a class = "una" href="page2.html#lec21">Introduction of Text</a></li>
+			  <li><a class = "una" href="page2.html#lec22">The Power of Text</a></li>
+			  <li><a class = "una" href="page2.html#lec23">Text Elements</a></li>
+			  <li><a class = "una" href="page2.html#lec24">Types of Text</a></li>
+			  <li><a class = "una" href="page2.html#lec25">Fonts and Typefaces</a></li>
+			  <li><a class = "una" href="page2.html#lec26">Font Terminology</a></li>
+			  <li><a class = "una" href="page2.html#lec27">Classification of Fonts</a></li>
+			  <li><a class = "una" href="page2.html#lec28">Font Styles</a></li>
+			  <li><a class = "una" href="page2.html#lec29">Font Types</a></li>
+			  <li><a class = "una" href="page2.html#lec301">Bitmapped and Vector Fonts</a></li>
+			  <li><a class = "una" href="page2.html#lec311">Tracking and Kerning</a></li>
+			  <li><a class = "una" href="page2.html#lec321">Font Mapping</a></li>
+			  <li><a class = "una" href="page2.html#lec331">Guidelines of Choosing Fonts</a></li>
+			  <li><a class = "una" href="page2.html#lec341">Efficient Use of Text</a></li>
+			</ul>
+			<br>
+			
+			<p style = "font: 13px arial; color: black; font-weight: 100; margin-left: 0.8em; margin-bottom: -1em;">Chapter 3: Image </p>
+			
+			<ul>
+			  <hr style = "border: 0.5px solid gray; margin-left: -1em;">
+			  <li><a class = "una" href="page3.html#lec31">Multimedia Images</a></li>
+			  <li><a class = "una" href="page3.html#lec32">Bitmap</a></li>
+			  <li><a class = "una" href="page3.html#lec33">Vector Drawn Images</a></li>
+			  <li><a class = "una" href="page3.html#lec34">Bitmaps v/s Vector Images</a></li>
+			  <li><a class = "una" href="page3.html#lec35">3-D Images</a></li>
+			  <li><a class = "una" href="page3.html#lec36">Colors</a></li>
+			  <li><a class = "una" href="page3.html#lec37">Image File Type used in Multimedia</a></li>
+			  <li><a class = "una" href="page3.html#lec38">Information Delivery</a></li>
+			</ul>
+			<br>
+		  </nav>
+	  
+		  <article>
+			<div class = "div1">
+				<h1 style = "font-family: times new roman; font-size: 35px; font-weight: 200; margin-bottom: 0em; margin-top: 0em;"> Chapter 3: Image </h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-top: 0em;" >
+				Source: "Multimedia:  Making It Work."</p>
+				</div>
+			
+			<div class ="div2">
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-bottom: 0em;"> <b>Objectives</b></p>
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-top: 0.5em;">
+				○ Discuss the various factors that apply to the use of images in multimedia. <br>
+				○ Describe the capabilities and limitations of bitmap images.<br>
+				○ Describe the capabilities and limitations of vector images.<br>
+				○ Define various aspects of 3D modeling.<br>
+				○ Describe the use of colors and palettes in multimedia.<br>
+				○ Cite the various file types used in multimedia.<br>
+				</p>
+								
+				
+				
+				
+				
+				
+				</p>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-bottom: 0em;"> <b>Overview</b></p>
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-top: 0.5em;">
+				○ Creation of multimedia images.<br>
+				○ Creation of still images.<br>
+				○ Colors and palettes in multimedia.<br>
+				○ Image file types used in multimedia.<br>
+
+				
+				
+				</p>
+				
+				<table>
+				  <tr>
+					<th>
+					<p style = "font-family: arial; font-size: 12px; color: black; font-weight: 300; font-weight: bold; text-align: center;"> Contents
+					
+						<ol style = "font-family: arial; font-size: 12px; text-align: left; margin-left: 0em; font-weight: 100">
+							<li><a class = "una" href="page3.html#lec31">Multimedia Images</a></li>
+							<li><a class = "una" href="page3.html#lec32">Bitmap</a>
+								<ol>
+									<li><a class = "una" href="#bit1">Using clip art galleries</a></li>
+									<li><a class = "una" href="#bit2">Using bitmap software</a></li>
+									<li><a class = "una" href="#bit3">Capturing and editing images</a></li>
+									<li><a class = "una" href="#bit4">Scanning images</a></li>
+								</ol>
+							</li>	
+								
+							<li><a class = "una" href="page3.html#lec33">Vector Drawn Images</a>
+								<ol>
+									<li><a class = "una" href="#vec1">Applications of Vector-Drawn Images</a></li>
+									<li><a class = "una" href="#vec2">How Vector-Drawn Images Work</a></li>
+								</ol>
+							</li>
+							
+							<li><a class = "una" href="page3.html#lec34">Bitmaps v/s Vector Images</a></li>
+							<li><a class = "una" href="page3.html#lec35">3-D Images</a>
+								<ol>
+									<li><a class = "una" href="#3d1">3-D Drawing and Rendering</a></li>
+									<li><a class = "una" href="#3d2">Features of a 3-D Application</a></li>
+									<li><a class = "una" href="#3d3">3-D Animation Tools</a></li>
+								</ol>
+							</li>
+							
+							<li><a class = "una" href="page3.html#lec36">Colors</a>
+								<ol>
+									<li><a class = "una" href="#color1">Natural Light and Color</a></li>
+									<li><a class = "una" href="#color2">Color and Culture</a></li>
+									<li><a class = "una" href="#color3">Color and Emotion</a></li>
+									<li><a class = "una" href="#color4">Computererized Color </a></li>
+									<li><a class = "una" href="#color5">Monitor-Specific Colors</a></li>
+									<li><a class = "una" href="#color6">Computer Color Models</a></li>
+									<li><a class = "una" href="#color7">Color Palettes</a></li>
+									<li><a class = "una" href="#color8">Dithering</a></li>
+								</ol>
+							</li>
+							
+							<li><a class = "una" href="page3.html#lec37">Image File Type used in Multimedia</a>
+								<ol>
+									<li><a class = "una" href="#format1">Macintosh formats</a></li>
+									<li><a class = "una" href="#format2">Windows formats</a></li>
+									<li><a class = "una" href="#format3">Cross-platform formats</a></li>
+								</ol>
+							</li>
+							
+							<li><a class = "una" href="page3.html#lec38">Information Delivery</a></li>
+						</ol>
+					</p>
+					
+					</th>
+				  </tr>
+			</table>
+				
+				
+			</div>
+			
+			
+			<div class = "div4">
+				<img class = "ftpic" src="image1.jpg">
+				<img class = "ftpic" src="image2.jpg">
+			</div>
+				
+			<div class = "div3">
+			
+				<h1 id = "lec31" style = "font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; display: block"> 
+				Multimedia Images </h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;margin-bottom:-1em;">
+				
+				Images obviously play a very important role in multimedia products. 
+				Images may be photograph-like bitmaps, vector-based drawings, or 3D renderings.<br><br>
+
+				The type of still images created depends on the display resolution, and hardware and software capabilities. 
+				Access to the right tools and right hardware for image development is important!
+				E.g., graphic designers like to have large, high-resolution monitors or multiple monitors.<br><br>
+				
+
+				Still images are generated in two ways:
+				
+				</p>
+
+			
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 1.4em; margin-left: 2em;margin-bottom: 2em;" >			
+					<li>Bitmaps (or raster-based).</li>
+					<li>Vector-drawn graphics.</li>
+				</ul>
+
+				
+				<center><img class = "imgtype" src="imgtype.jpg"></center>
+				
+				<h1 id = "lec32" style = "font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; display: block"> 
+				Bitmap </h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				
+				
+	
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;margin-bottom: -1em;">
+
+				<b>Bitmap</b> is derived from the words ‘bit’, which means the simplest element in which only two digits are used, and ‘map’, which is a two-dimensional matrix of these bits.
+				A bitmap is a data matrix describing the individual dots of an image that are the smallest elements (pixels) of resolution on a computer screen or printer.
+				<br>
+				<br>
+				
+		
+				Bitmaps are an image format suited for creation of:
+				</p>
+				
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 1.4em; margin-left: 2em;" >			
+					<li>Photo-realistic images.</li>
+					<li>Complex drawings.</li>
+					<li>Images that require fine detail.</li>
+				</ul>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;margin-bottom: -1em;">
+
+				Bitmapped images are known as paint graphics. 
+				Bitmapped images can have varying bit and color depths. 
+				
+			
+				More bits provide more color depth, hence more photo-realism; 
+				but require more memory and processing power.<br><br>
+
+				Available binary Combinations for Describing a Color
+
+				<br><br>
+				</p>
+				
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 1.4em; margin-left: 2em;" >				
+					<li>Monochrome just requires one bit per pixel, representing black or white</li>
+					<li>8 bits per pixel allows 256 distinct colors</li>
+					<li>16 bits per pixel represents 32K distinct colors (Most graphic chipsets now supports the full 65536 colors and the color green uses the extra one bit)</li>
+					<li>24 bits per pixel allows millions of colors</li>
+					<li>32 bits per pixel – trillion of colors</li>
+				</ul>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;margin-bottom: -1em;">
+
+				Bitmaps are best for photo-realistic images or complex drawings requiring fine detail
+
+				Bitmaps picture and their suitability of use:
+				</p>
+				
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 1.4em; margin-left: 2em;" >				
+					<li>Use the native Microsoft bmp format as a raw image that will later be processed. It faster to process.</li>
+					<li>Use JPEG, for photo sharing on the web because of its size and quality.</li>
+					<li>GIF is normally used for diagrams, buttons, etc., that have a small number of colours. 
+					It is also suitable for simple animation because it supports interlaced images.</li>
+					<li>PNG is almost equal to gif except that it didn’t support the animation format.</li>
+				</ul>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;margin-bottom: -1em;">
+
+				Bitmaps can be inserted by:
+				
+				</p> 
+				
+				<ol style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-top: 1.4em;" >
+					<b><li id = "bit1">Using clip art galleries </li></b>
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;">
+							<li>A clip art gallery is an assortment of graphics, photographs, sound, and video.</li>
+							<li>Clip arts are a popular alternative for users who do not want to create their own images.</li>
+							<li>Clip arts are available on CD-ROMs and on the Internet.</li>
+							<li>Legal rights: </li>
+								<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: square; margin-top: 0.4em; margin-left: 2em;">
+									<li>Public Domain Image</li>
+									<li>Royalty Free Image</li>
+									<li>Right Managed Image</li>
+								</ul>
+						</ul><br><br>
+						
+					<b><li id = "bit2">Using bitmap software </li></b>
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;">
+							<li>The industry standard for bitmap painting and editing programs are:</li>
+								<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: square; margin-top: 0.4em; margin-left: 2em;">
+									<li>Adobe's Photoshop and Illustrator.</li>
+									<li>Macromedia's Fireworks.</li>
+									<li>Corel's Painter.</li>
+									<li>CorelDraw.</li>
+									<li>Quark Express.</li>
+								</ul>
+						</ul><br><br>						
+							
+							
+							
+					
+					<b><li id = "bit3">Capturing and editing images </li></b>
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;">
+							<li>Capturing and storing images directly from the screen is another way to assemble images for multimedia.</li>
+							<li>The PRINT SCREEN button in Windows and COMMAND-CONTROL-SHIFT-4 keystroke on the Macintosh copies the screen image to the clipboard.</li>
+							<li>Clipboard : a temporary memory to store the COPY, CUT and PASTE data.</li>
+							<li>Image editing programs enable the user to:</li>
+								<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: square; margin-top: 0.4em; margin-left: 2em;">
+										<li>Enhance and make composite images.</li>
+										<li>Alter and distort images.</li>
+										<li>Add and delete elements.</li>
+										<li>Morph (manipulate still images to create animated transformations).</li><br>
+								</ul>
+							<li>High Resolution Image: based on dot per inch (dpi) & effect file size.</li>
+							<li>High Resolution Photo</li>
+								<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: square; margin-top: 0.4em; margin-left: 2em;">										
+								  <li>A high resolution picture is determined
+								  by its number of pixels; more pixels
+								  improves the sharpness of the picture.</li>					
+								  <li>This is print quality.</li><br>
+								</ul>
+							
+							<li>Low resolution photo</li>
+								<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: square; margin-top: 0.4em; margin-left: 2em;">																																		
+									 <li>Any pictures found on the web  
+									normally are low resolution and not  
+									suitable for print quality.</li>
+
+									 <li>A picture that is low-resolution cannot
+									be made into a high resolution photo</li>
+								</ul>
+						</ul><br><br>	
+					
+		
+					<b><li id = "bit4">Scanning images </li></b>
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;">
+							<li>Users can scan images from conventional sources and make necessary alterations and manipulations.</li>
+						</ul>
+
+				</ol><br>	
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;margin-bottom: 2em;">
+
+				Example of Morphing:
+				
+				<center><img class = "imgmorph" src="imgmorph.jpg"></center>
+				
+				</p>
+
+  
+				<h1 id = "lec33" style = "display: block; font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; margin-top: 3em;"> 
+				Vector Drawn Images </h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-bottom: -1em;">
+				
+				<b id = "vec1">Applications of Vector-Drawn Images</b><br>
+				
+				</p>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-top: 1.2em; margin-bottom: -1em;">
+				
+				Vector-drawn images - created from geometric objects such as lines, rectangles, ovals, polygons using mathematical formulas.
+
+				Vector-drawn images are used in the following areas:</p>
+				
+				
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 1.4em; margin-left: 2em; margin-bottom: 2em;" >				
+					<li>Computer-aided design (CAD) programs.</li>
+					<li>Graphic artists designing for the print media.</li>
+					<li>3-D animation programs.</li>
+					<li>Applications requiring drawing of graphic shapes.</li>	
+				</ul>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-bottom: -1em;">
+				
+				<b id = "vec2">How Vector-Drawn Images Work</b><br>
+				
+				</p>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-top: 1.2em;margin-bottom: -1em;">
+				
+				A vector is a line that is described by the location of its two endpoints. 
+				Vector drawing makes use of Cartesian co-ordinates. 
+				Cartesian coordinates are numbers that describe a point in two or three-dimensional space as the intersection of X, Y, and Z axis.<br><br>
+				
+				<b>Example:</b>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-bottom: -1em; margin-top: 1.2em;">
+				
+				RECT 0,0,200,300,RED,BLUE says<br>
+				
+				</p>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block-inline; margin-right: 5em; margin-top: 1.2em; margin-bottom: 2em;">
+				
+				&nbsp;&nbsp;&nbsp; “Draw a rectangle starting at 0,0 (upper left corner of screen) going<br> 
+				&nbsp;&nbsp;&nbsp;&nbsp;  200 pixels horizontally right and 300 pixels downward, with a RED <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;  boundary and filled with BLUE.”
+				
+				<center><img class = "imgexample" src="imgexample.jpg"></center>
+				</p>
+				
+				<h1 id = "lec34" style = "font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; display: block"> 
+				Vector-Drawn Images v/s Bitmaps</h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+		
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-top: 1.2em; margin-bottom: 2em;">
+				
+				Vector images use less memory space and have a smaller file size (.svg) as compared to bitmaps. 
+
+				For the Web, pages that use vector graphics in plug-ins download faster, and when used for animation, draw faster than bitmaps.
+				
+				Vector images cannot be used for photorealistic images.
+
+				Vector images require a plug-in for Web-based display.
+
+				Bitmaps are not easily scalable and resizable.
+
+				Bitmaps can be converted to vector images using autotracing.<br><br><br>
+
+
+				</p>
+				
+				<h1 id = "lec35" style = "font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; display: block"> 
+				3-D </h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-bottom: -1em;">
+				
+				<b id = "3d1">3-D Drawing and Rendering</b><br>
+				
+				</p>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-top: 1.2em; margin-bottom: -1em;">
+						
+				3D graphics tools, such as Macromedia Extreme3D, or Form-Z, typically extend vector-drawn graphics in 3 dimensions (x, y and z)
+				A 3D scene consist of object that in turn contain many small elements, such as blocks, cylinders, spheres or cones (described in terms of vector graphics)
+				The more elements, the finer the object’s resolution and smoothness.
+
+				Objects as a whole have properties such as shape, color, texture, shading & location.
+				A 3D application lets you model an object’s shape, then render it completely.
+		
+				<br><br><br>
+
+				<b id = "3d2">Features of a 3-D Application</b>
+				
+				</p>
+
+				<ol style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-top: 1.4em;" >
+					<b><li>Modeling </li></b>
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;">
+							<li>Modeling involves drawing a shape, such as a 2D letter,  then extruding it or lathing it into a third dimension.</li>
+								<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: square; margin-top: 0.4em; margin-left: 2em;">											
+									<li>extruding: extending its shape along a defined path</li>
+									<li>lathing: rotating a profile of the shape around a defined axis</li>
+								</ul>
+							<li>Modeling also deals with lighting, setting a camera view to project shadows.</li>
+						</ul><br>
+
+					<b><li>Rendering </li></b>
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;">
+							<li>Rendering produces a final output of a scene and is more compute-intensive.</li>
+						</ul>
+				</ol><br>
+
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-top: 1.2em; margin-bottom: -1em;">
+				
+
+				<b id = "3d3">3-D Animation Tools</b></br>
+				
+				</p>
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-bottom: -1em; margin-top: 1.2em;">
+				
+				3-D animation, drawing, and rendering tools include:
+				</p> 
+				
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 1.4em; margin-left: 2em; margin-bottom: 2em;" >				
+					<li>Ray Dream Designer.</li>
+					<li>Caligari True Space 2.</li>
+					<li>Specular Infini-D.</li>
+					<li>Form*Z.</li>
+					<li>NewTek's Lightwave.</li>
+				</ul>
+								
+							
+				
+				<h1 id = "lec36" style = "display: block;font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; margin-top: 3em;"> 
+				Colors </h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-bottom: -1em;">
+				
+				<b id = "color1">Natural Light and Color</b>
+				
+				</p>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-top: 1.2em; margin-bottom: -1em;">
+				
+				Vector-drawn images - created from geometric objects such as lines, rectangles, ovals, polygons using mathematical formulas.
+
+				Vector-drawn images are used in the following areas:
+				
+				</p>
+				
+				
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 1.4em; margin-left: 2em; margin-bottom: 2em;" >				
+					<li>Light comes from an atom where an electron passes from a higher to a lower energy level.</li>
+					<li>Each atom produces uniquely specific colors.</li>
+					<li>Color is the frequency of a light wave within the narrow band of the electromagnetic spectrum, to which the human eye responds.</li>
+					<li>Eye can differentiate 80,000 different colors.</li>
+				</ul>
+				
+				
+				</p>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-bottom: -1em;">
+				
+				<b id = "color2">Color and Culture</b><br>
+				
+				</p>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-top: 1.2em; margin-bottom: 2em;">
+				
+				<center><img class = "imgcolor" src="imgcolor.jpg"></center>
+				
+				</p>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-bottom: -1em;">
+				
+				<b id = "color3">Color and Emotion</b><br>
+				
+				</p>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-top: 1.2em; margin-bottom: 2em;">
+				
+				<center><img class = "imgcolor" src="imgcolor1.jpg"></center>
+				
+				</p>
+			
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-bottom: -1em;">
+				
+				<b id = "color4">Computererized Color</b>
+				
+				<br>
+				
+				The tools we use to describe color are different when the color is printed than from when it is projected
+				2 basic method of making color:
+				</p>
+
+				
+				<ol style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-top: 1.4em;" >
+					<b><li id = "color1">Additive Color </li></b>
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;">											
+							<li>In the additive color method, a color is created by combining colored light sources in three primary colors - red, green, and blue (RGB).</li>
+							<li>OLD TV and computer monitors use this method.</li>
+						</ul>
+					
+					<b><li id = "color2">Subtractive Color </li></b>
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;">																
+							<li>In the subtractive color method, color is created by combining colored media such as paints or ink.</li>
+							<li>The colored media absorb (or subtract) some parts of the color spectrum of light and reflect the others back to the eye.</li>
+							<li>Subtractive color is the process used to create color in printing.</li>
+							<li>The printed page consists of tiny halftone dots of three primary colors- cyan (complement of Red), magenta (complement of Green), and yellow (Complement of Blue) (CMY).</li>
+						</ul>
+				</ol><br>
+
+
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-bottom: -1em;">
+				
+				<b id = "color5">Monitor-Specific Colors</b>
+				
+				</p>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-top: 1.2em; margin-bottom: 2em;">
+						Colors should be used according to the target audience's monitor specifications. 
+						The preferred monitor resolution is higher 1024x768 pixels and higher. 
+						The preferred color depth is 24 bits or more which can display 16,777,216 different colors. 
+				</p>
+
+						
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-bottom: -1em;">
+				
+				<b id = "color6">Computer Color Models</b><br>
+				
+				Different ways of representing information about color. 
+				Models used to specify color in computer terms are:
+				</p>	
+				
+				<ol style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-top: 1.4em;margin-bottom:2em;" >
+					<li>RGB model- A 24-bit methodology where color is specified in terms of red, green, and blue values ranging from 0 to 255.</li>
+					<li>HSB and HSL models – Color is specified as an angle from 0 to 360 degrees on a color wheel.</li>
+					<li>Other models include CMYK, CIE, YIQ, YUV, and YCC.</li>
+				</ol>
+						
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-bottom: -1em;">
+				
+				<b>RGB Model</b>
+				
+				</p>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-top: 1.2em; margin-bottom: 2em;">						
+						Add red, green and blue to create colors, so it is an additive model. 
+						Assigns an intensity value to each pixel ranging from 0 (black) to 255 (white). 
+						A bright red color might have R 246, G 20, B 50
+				</p>	
+						
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-bottom: -1em;">
+				
+				<b>HSB and HSL Color Models</b>
+				
+				</p>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-top: 1.2em; margin-bottom: -1em;">						
+						Based on human perception of color, three fundamental properties of color:
+				</p>	
+					<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 1.4em; margin-left: 2em;margin-bottom: 2em;">																
+						<li>Hue – angle of 0 -360 degrees</li>
+							<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: square; margin-top: 0.4em; margin-left: 2em;">										
+								<li>Hue - color reflected from or transmitted through an object, measured on color wheel</li>
+							</ul>
+						<li>Saturation – intensity of color (%)</li>
+							<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: square; margin-top: 0.4em; margin-left: 2em;">										
+								<li>Saturation (or chroma) - strength or purity of color (% of grey in proportion to hue)</li>
+							</ul>
+						<li>Brightness / Lightness - relative lightness or darkness of color (%)</li>
+							<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: square; margin-top: 0.4em; margin-left: 2em;">										
+								<li>Brightness - relative lightness or darkness of color, also measured as %</li>
+							</ul>
+					</ul>
+
+					<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-bottom: -1em;">
+				
+					<b>CMYK Model </b>
+					
+					</p>
+					
+					<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-top: 1.2em; margin-bottom: 2em;">						
+						Based on light-absorbing quality of ink printed on paper
+						As light is absorbed, part of the spectrum is absorbed and part is reflected back to eyes
+						Associated with printing; called a modsubtractive model
+						Four channels: Cyan (C ), magenta (M), yellow (Y) and black (K),<br><br>
+
+						In theory, pure colors should produce black, but printing inks contain impurities, so this combination produces muddy brown
+						K is needed to produce pure black, hence CMYK is four-color process printing
+					</p>
+
+					<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-bottom: -1em;">
+				
+					<b id = "color7">Color Palettes  </b>
+					
+					</p>
+					
+					<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-top: 1.2em; margin-bottom: 2em;">						
+						
+						Palettes are mathematical tables that define the color of pixels displayed on the screen.
+						Palettes are called ‘color lookup tables’ or CLUTs on Macintosh.
+						The most common palettes are 1, 4, 8, 16, and 24-bit deep.
+						
+					</p>	
+
+					<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-bottom: -1em;">
+				
+					<b id = "color8">Dithering</b>
+					
+					</p>
+					
+					<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-top: 1.2em; margin-bottom: 2em;">						
+						
+						Dithering is a process whereby the color value of each pixel is changed to the closest matching color value in the target palette.
+						This is done using a mathematical algorithm.
+						
+					</p>	
+							
+
+				<h1 id = "lec37" style = "display: block;font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; margin-top: 3em;"> 
+				Image File Type used in Multimedia </h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+			
+				<ol style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-top: 1.4em;margin-bottom:2em;" >
+					<b id = "format1"><li>Macintosh formats.</li></b>
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0em; margin-left: 2em;margin-bottom: 2em;">																
+							<li>On the Macintosh, the most commonly used format is PICT.</li>
+							<li>PICT is a complicated and versatile format developed by Apple.</li>
+							<li>Almost every image application on the Macintosh can import or export PICT files.</li>
+						</ul>
+					
+					
+					
+					
+					<b id = "format2"><li>Windows formats.</li></b>
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0em; margin-left: 2em;margin-bottom: 2em;">																
+							<li>The most commonly used image file format on Windows is DIB or known as BMP.</li>
+							<li>DIB stands for Device-independent bitmaps.</li>
+							<li>Bitmap formats used most often by Windows
+							developers are:</li>
+								<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: square; margin-top: 0.4em; margin-left: 2em;">										
+									<li>BMP - A Windows bitmap file. 
+									Native bitmap file format of the Microsoft Windows environment</li>
+
+									<li>TIFF - Extensively used in DTP packages. 
+									Used to exchange documents between different applications and platforms</li>
+
+									<li>PCX - Used by MS-DOS paint software. 
+									One of the oldest bitmapped formats popularized by MS-DOS paint programs that first appeared in the early 1980's</li>
+								</ul>
+						</ul>
+										
+										
+							
+					
+					<b id = "format3"><li>Cross-platform formats.</li></b>
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0em; margin-left: 2em;margin-bottom: 2em;">																
+							<li>The image file formats that are compatible across platforms are:</li>
+								<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: square; margin-top: 0.4em; margin-left: 2em;">										
+									<li>DXF, IGS or IGES - Used by CAD applications.</li>
+									<li>CDR – CorelDraw, PSD – Photoshop n AI - Illustrator</li>
+									<li>JPEG, PNG and GIF - Most commonly used formats on the Web.</li>
+								</ul>			
+						</ul>					
+						
+				</ol>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-bottom: -1em;">
+				
+				<b>	Most Popular Image File Formats</b>
+				
+				</p>
+				
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 1.4em; margin-left: 2em;margin-bottom: 2em;">																						
+					<li>JPEG (Joint-Photographic Experts Group)</li>
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: square; margin-top: 0.4em; margin-left: 2em;">										
+							<li>For continuous tone images, such as full-color photographs
+							Supports more than 16 millions of color (24-bit)
+							Uses lossy compression (averaging may lose information)</li>
+						</ul><br>	
+						
+										
+					<li>GIF (Graphical Interchange Format)</li>
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: square; margin-top: 0.4em; margin-left: 2em;">										
+							<li>For large areas of the same color and a moderate level of detail.</li>
+							<li>Supports up to 256 colors</li>
+							<li>Allows transparency and interlacing</li>
+							<li>Uses lossless compression</li>
+						</ul><br>
+
+											
+											
+							
+					<li>PNG (Portable Network Graphic)</li>
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: square; margin-top: 0.4em; margin-left: 2em;">										
+							<li>lossless, portable, well-compressed storage of raster images</li>
+							<li>patent-free replacement for GIF</li> 
+							<li>also replace many common uses of TIFF</li>
+							<li>Support indexed-color, grayscale, and true color images + an optional alpha channel for transparency</li>
+						</ul><br>
+					
+					<li>Other formats: BMP, PSD, TIFF/TIF, TGA, EPS, PCX, ICO </li>
+				</ul>
+					
+						
+			
+				
+				
+
+			
+				
+				<h1 id = "lec38" style = "display: block;font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; margin-top: 3em;"> 
+				Information Delivery</h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+					
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-top: 1.2em; margin-bottom: -1em;">						
+						
+								
+				Images or Graphics are used to convey information in multimedia products. 
+				For example, a picture of an automobile engine is much more effective than text that merely describes it. 
+				<br><br>
+				Images or Graphics for information delivery include:
+				</p>	
+				
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 1.4em; margin-left: 2em;margin-bottom: 0em;">																									
+					<li>Drawn images</li>
+					<li>Charts and graphs</li>
+					<li>Maps</li>
+					<li>Scenery</li>
+					<li>People</li>
+				</ul>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-top: 1.2em; margin-bottom: 2em;">						
+				
+				In each case, the image must be relevant to the overall product. 
+				Image size, color in respect to the application and other images, and positioning must all be considered when using images.
+
+				</p>
+		
+		
+				
+				
+				</div>
+				
+				
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</div>
+					  
+					  
+		  
+		  
+		  
+		  
+		  
+		  </article>
+		</section>
+
+	<footer>
+	  <b><p style = "font-size: 12px; font-family: arial; color: #3366CC ; text-align: center; margin-top: 0em; word-spacing: 2px;">TONIE ANNE C. MARTINEZ / ITC29 / 302I / 10:30AM - 1:30PM  </p></b>
+	</footer>
+
+	<body>
+<html>	
+	

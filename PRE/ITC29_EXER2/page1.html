@@ -1,0 +1,890 @@
+<!doctype html>
+<html>
+    <head>
+       <title> Multimedia Development — Introduction to Multimedia </title>
+	   <meta name="viewport" content="width=device-width, initial-scale=1">
+	 
+		<style>
+			*{
+			box-sizing: border-box;}
+			
+			body{
+			margin: 0;
+			background-color: white;}
+			 
+			nav{
+			float: left;
+			width: 15%;
+			height: auto;
+			background: white;
+			padding-top: 15px;
+			padding-left: 12px;
+			padding-right: 12px;
+			}
+			
+			img.logo{
+			display: block;
+			margin-top: 1em;
+			margin-bottom: -1em;
+			margin-left: 0.4em;
+			margin-right: auto;
+			width: 150px;}
+			
+			
+			a.una:link {
+			color: #3366CC;
+			background-color: transparent;
+			text-decoration: none;}
+
+			a.una:visited {
+			color: #3366CC;
+			background-color: transparent;
+			text-decoration: none;}
+
+			a.una:hover {
+			color: #3366CC;
+			background-color: transparent;
+			text-decoration: underline;}
+
+			a.una:active {
+			color: #3366CC;
+			background-color: transparent;
+			text-decoration: underline;}
+				
+			ul{
+			list-style-type: none;
+			padding: 0;
+			font-family: arial;
+			font-size: 12px;
+			margin-left: 0.8em;}
+			
+			li{
+			margin-bottom: 0.3em;}
+
+			article{
+			float: left;
+			padding: 20px;
+			margin-top: 4em;
+			margin-right: -2em;
+			width: 85%;
+			background-color: white;
+			height: auto;
+			border-style: solid;
+			border-width: 1px;
+			border-bottom-color: #A7D7F9;
+			border-top-color: white;
+			border-right-color: white;
+			border-left-color: #A7D7F9;}
+			
+			table{
+			margin-top: 1em;
+			margin-bottom: 1em;
+			border-collapse: collapse;
+			border: 0.3px solid gray;
+			padding: 10px;
+			width: 300px;
+			height: auto;}
+			
+				
+			th{
+			padding-right: 10px;
+			padding: 5px;
+			border-collapse: collapse;
+			text-align: left;}
+			
+			.header{
+			border: 1px solid gray;
+			background-color: #DDCEF2;
+			height: 27px;
+			display: block;
+			}
+			
+			.div1{
+			height: auto;
+			padding: 10px;
+			display: block;
+			}
+			
+			.div2{
+			height: 750px;
+			padding: 10px;
+			display: block-inline;
+			width: 60%;
+			float: left;
+			margin-top: 0em;}
+			
+			.div2 ol{ counter-reset: item; }
+			.div2 li{ display: block; }
+			.div2 li:before { content: counters(item, ".") " "; counter-increment: item; }
+			
+			img.mmuse{
+			width: 600px;
+			position: relative;
+			display: block-inline;
+			border: 2px solid gray;
+			padding: 3px;
+			margin-top: 0.5em;
+			margin-bottom: 1em;
+			margin-left: 3em;}
+			
+			img.mminter{
+			width: 800px;
+			position: relative;
+			display: block-inline;
+			border: 2px solid gray;
+			padding: 3px;
+			margin-top: 0.5em;
+			margin-bottom: 1em;
+			margin-left: 3em;}
+			
+			.div4{
+			height: 750px;
+			padding: 10px;
+			display: block-inline;
+			float: right;
+			width: 40%;
+			margin-top: 0em;}
+			
+			img.ftpic{
+			width: 350px;
+			position: relative;
+			display: block-inline;
+			border: 2px solid gray;
+			padding: 5px;}
+			
+			.div3{
+			height: auto;
+			padding: 10px;
+			display: block;
+			margin-top: 0em;
+			}
+			
+	
+			
+			/* Clear floats after the columns */
+			
+			section:after{
+			content: "";
+			display: table;
+			clear: both;}	
+						
+			footer{
+			float: right;
+			width: 86%;
+			background-color: white;
+			padding: 10px;
+			text-align: center;
+			color: black;}
+			
+			
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			
+			@media (max-width: 600px){
+			nav, article {
+			width: 100%;
+			height: auto;
+			
+			
+			
+			
+			
+			
+		</style>	
+	<head>
+	
+	<body>
+	
+		<section>
+		  <nav>
+		
+			<img class = "logo" src="1.png">
+			<h5 style = "font-size: 30px; font-family: garamond; color: #042F67; display: inline; margin-left: 0.7em; margin-right: -1em; margin-top: 0em;margin-bottom: 0em; ">M</h5>
+			<h5 style = "font-size: 15px; font-family: garamond;display: inline; margin-left: 1.7em; margin-top: -1em;margin-bottom:0em; color: #042F67;">ULTIMEDIA </h5>
+			<h5 class = "first" style = "font-family: garamond; font-size: 13px; margin-top: 0em; margin-left: 2em;margin-top: -0.5em;color: #042F67;"> DEVELOPMENT </h5>
+		    
+			<br>
+			<ul>
+			  <li><a class = "una" href="index.html">Index</a> / <a class = "una" href="mainpage.html">Main Page</a></li> 
+			</ul>
+			
+			
+			
+		   <p style = "font: 13px arial; color: black; font-weight: 100; margin-left: 0.8em; margin-bottom: -1em;margin-top: 2em;"> Chapter 1:<br>Introduction to Multimedia </p>
+			
+			<ul>
+			  <hr style = "border: 0.5px solid gray; margin-left: -1em;">
+			  <li><a class = "una" href="page1.html#lec1">What is Multimedia?</a></li>
+			  <li><a class = "una" href="page1.html#lec2">Definition of Terms</a></li>
+			  <li><a class = "una" href="page1.html#lec3">Where to Use Multimedia?</a></li>
+			  <li><a class = "una" href="page1.html#lec4">5 Elements of Multimedia</a></li>
+			  <li><a class = "una" href="page1.html#lec5">Interactive Multimedia</a></li>
+			  <li><a class = "una" href="page1.html#lec6">Linear vs Non-Linear</a></li>
+			  <li><a class = "una" href="page1.html#lec7">Authoring Tools</a></li>
+			  <li><a class = "una" href="page1.html#lec8">Importance of Multimedia</a></li>
+			  <li><a class = "una" href="page1.html#lec9">Multimedia Products</a></li>
+			  <li><a class = "una" href="page1.html#lec10">Delivering Multimedia</a></li>
+			</ul>
+			<br>
+			
+			
+			<p style = "font: 13px arial; color: black; font-weight: 100; margin-left: 0.8em; margin-bottom: -1em;">Chapter 2: Text </p>
+			
+			<ul>
+			  <hr style = "border: 0.5px solid gray; margin-left: -1em;">
+			  <li><a class = "una" href="page2.html#lec21">Introduction of Text</a></li>
+			  <li><a class = "una" href="page2.html#lec22">The Power of Text</a></li>
+			  <li><a class = "una" href="page2.html#lec23">Text Elements</a></li>
+			  <li><a class = "una" href="page2.html#lec24">Types of Text</a></li>
+			  <li><a class = "una" href="page2.html#lec25">Fonts and Typefaces</a></li>
+			  <li><a class = "una" href="page2.html#lec26">Font Terminology</a></li>
+			  <li><a class = "una" href="page2.html#lec27">Classification of Fonts</a></li>
+			  <li><a class = "una" href="page2.html#lec28">Font Styles</a></li>
+			  <li><a class = "una" href="page2.html#lec29">Font Types</a></li>
+			  <li><a class = "una" href="page2.html#lec301">Bitmapped and Vector Fonts</a></li>
+			  <li><a class = "una" href="page2.html#lec311">Tracking and Kerning</a></li>
+			  <li><a class = "una" href="page2.html#lec321">Font Mapping</a></li>
+			  <li><a class = "una" href="page2.html#lec331">Guidelines of Choosing Fonts</a></li>
+			  <li><a class = "una" href="page2.html#lec341">Efficient Use of Text</a></li>
+			</ul>
+			<br>
+			
+			<p style = "font: 13px arial; color: black; font-weight: 100; margin-left: 0.8em; margin-bottom: -1em;">Chapter 3: Image </p>
+			
+			<ul>
+			  <hr style = "border: 0.5px solid gray; margin-left: -1em;">
+				<li><a class = "una" href="page3.html#lec31">Multimedia Images</a></li>
+				<li><a class = "una" href="page3.html#lec32">Bitmap</a></li>
+				<li><a class = "una" href="page3.html#lec33">Vector Drawn Images</a></li>
+				<li><a class = "una" href="page3.html#lec34">Bitmaps v/s Vector Images</a></li>
+				<li><a class = "una" href="page3.html#lec35">3-D Images</a></li>
+				<li><a class = "una" href="page3.html#lec36">Colors</a></li>
+				<li><a class = "una" href="page3.html#lec37">Image File Type used in Multimedia</a></li>
+				<li><a class = "una" href="page3.html#lec38">Information Delivery</a></li></ul>
+			<br>
+		  </nav>
+	  
+		  <article>
+			<div class = "div1">
+				<h1 style = "font-family: times new roman; font-size: 35px; font-weight: 200; margin-bottom: 0em; margin-top: 0em;"> Chapter 1: Introduction to Multimedia </h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-top: 0em;" >
+				Source: "Multimedia:  Making It Work."</p>
+				</div>
+			
+			<div class ="div2">
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-bottom: 0em;"> <b>Objectives</b></p>
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-top: 0.5em; margin-bottom: 3em;">
+				○ Define common multimedia terms such as multimedia, integration, interactive, HTML, and 
+				  &nbsp;&nbsp;&nbsp;authoring and qualify the characteristics of multimedia: nonlinear versus linear content. <br>
+				○ Describe several different environments in which multimedia might be used, and several different 
+				  &nbsp;&nbsp;&nbsp;aspects of multimedia that provide a benefit over other forms of information presentation. <br>
+				○ Describe the primary multimedia delivery  methods—the Internet, wireless, CD-ROM, and DVD—
+				  &nbsp;&nbsp;&nbsp;as well as cite the history of multimedia and note important projected changes in the future of 
+				  &nbsp;&nbsp;&nbsp;multimedia. <br>
+				</p>
+				
+				
+				<table>
+				  <tr>
+					<th>
+					<p style = "font-family: arial; font-size: 12px; color: black; font-weight: 300; font-weight: bold; text-align: center;"> Contents
+					
+						<ol style = "font-family: arial; font-size: 12px; text-align: left; margin-left: 0em; font-weight: 100">
+							<li><a class = "una" href="#lec1">What is Multimedia?</a></li>
+									
+								
+							
+							
+							<li><a class = "una" href="#lec2">Definition of Terms</a></li>
+							<li><a class = "una" href="#lec3">Where to Use Multimedia?</a></li>
+							<li><a class = "una" href="#lec4">5 Elements of Multimedia</a>
+								<ol>
+									<li><a class = "una" href="#element1">Text</a></li>
+									<li><a class = "una" href="#element2">Graphic</a></li>
+									<li><a class = "una" href="#element3">Audio</a></li>
+									<li><a class = "una" href="#element4">Animation</a></li>
+									<li><a class = "una" href="#element5">Video</a></li>
+								</ol></li>
+							
+							<li><a class = "una" href="#lec5">Interactive Multimedia</a></li>
+							<li><a class = "una" href="#lec6">Linear vs Non-Linear</a>
+								<ol>
+									<li><a class = "una" href="#lin">Linear</a></li>
+									<li><a class = "una" href="#nonlin">Non-Linear</a></li>
+								</ol>
+							</li>
+							
+							<li><a class = "una" href="#lec7">Authoring Tools</a></li>
+							<li><a class = "una" href="#lec8">Importance of Multimedia</a></li>
+							<li><a class = "una" href="#lec9">Multimedia Products</a>
+								<ol>
+									<li><a class = "una" href="#prod1">Briefing Products</a></li>
+									<li><a class = "una" href="#prod2">Reference Products</a></li>
+									<li><a class = "una" href="#prod3">Database Products</a></li>
+									<li><a class = "una" href="#prod4">Education and Training Products</a></li>
+									<li><a class = "una" href="#prod5">Kiosk Products</a></li>
+									<li><a class = "una" href="#prod6">Entertainment & Games Products</a></li>
+								
+								</ol>
+							</li>
+							
+							<li><a class = "una" href="#lec10">Delivering Multimedia</a></li>
+						</ol>
+					</p>
+					
+					</th>
+				  </tr>
+			</table>
+				
+				
+			</div>
+			
+			<div class = "div4">
+				<center><img class = "ftpic" src="multimedia.jpg"></center>
+			</div>
+				
+			<div class = "div3">	
+				<h1 id = "lec1" style = "font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; display: block"> 
+				What is Multimedia? </h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;">
+				
+				<b>Multimedia</b> is derived from the word “Multi” and “Media”. Multi - Many, Multiple. Media -  Distribution tool & information presentation – text,
+				graphic, voice, images, music and etc. 
+			
+			
+				Multimedia is a combination of text, graphic,
+				sound, animation, and video that is delivered
+				interactively to the user by electronic or digitally
+				manipulated means. 
+				
+				
+				Multimedia is any combination of text, art, sound, animation, and video delivered to you by computer or other electronic or digitally manipulated means. 
+				It is richly presented sensation. When you weave together the sensual elements of multimedia — dazzling pictures and animations, engaging sounds, compelling video clips, and raw textual information — you can electrify the thought and action centers of people’s minds. When you give them interactive control of the process, they can be enchanted. 
+
+				Multimedia is any combination of text, graphic art, sound, animation, and video delivered by computer or other electronic means.<br><br>
+				Multimedia production requires creative, technical, organizing, and business ability.
+				Multimedia presentations can be nonlinear (interactive) or linear (passive).
+				Multimedia can contain structured linking called hypermedia.
+				Multimedia developers produce multimedia titles using authoring tools.
+				Multimedia projects, when published, are multimedia titles.<br>
+				</p>
+				
+				
+				<h1 id = "lec2" style = "display: block; font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; margin-top: 3em;"> 
+				Definition of Terms </h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;">				
+				When you allow an end user — also known as the viewer of a multimedia project — to control what and when the elements are delivered, it is called <b>Interactive Multimedia</b>. 
+				When you provide a structure of linked elements through which the user can navigate, interactive multimedia becomes <b>Hypermedia</b>. 
+
+				The people who weave multimedia into meaningful tapestries are called <b>Multimedia Developers</b>.
+				The software vehicle, the messages, and the content presented on a computer, television screen, PDA (personal digital assistant), or mobile phone together constitute a <b>Multimedia Project</b>. 
+				If the project is to be shipped or sold to consumers or end users, typically delivered as a download on the Internet but also on a CD-ROM or DVD in a box or sleeve, with or without instructions, it is a <b>Multimedia Media</b>. <br><br>
+				
+				Other terms: 
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+					<li><b>Browsers</b> – are software programs or tools for viewing content on the Web such as Internet Explorer, Safari, Google Chrome, or Firefox. </li>
+					<li><b>Linear</b> - starting at the beginning and running through to the end of the multimedia project. (Sequential) </li>
+					<li><b>Non-Linear</b> - users are given navigational control and can wander through the multimedia content at will. (Random) </li>
+					<li><b>Platform or Enviroment</b> – The Hardware and software that govern the limits of what can happen here. </li>
+				</ul>
+					
+				
+				</p>
+				
+				<h1 id = "lec3" style = "display: block;font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; margin-top: 3em;"> 
+				Where to Use Multimedia? </h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+					<li>Multimedia in Business </li>
+						<img class = "mmuse" src="mmuse1.jpg">
+					<li>Multimedia in Schools </li>
+						<img class = "mmuse" src="mmuse2.jpg">
+					<li>Multimedia at Home </li>
+						<img class = "mmuse" src="mmuse3.jpg">
+					<li>Multimedia in Public Places </li>
+						<img class = "mmuse" src="mmuse4.jpg">
+					<li>Virtual Reality </li>
+						<img class = "mmuse" src="mmuse5.jpg">
+				</ul>
+				
+				<h1 id = "lec4" style = "display: block;font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; margin-top: 3em;"> 
+				5 Elements of Multimedia</h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				<ol style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-top: 1em;" >
+					<b><li id = "element1" >Text </li></b>
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;">
+							<li>A broad term for something that contains words
+							to express something.</li>
+							<li>Text is the most basic element of multimedia.</li>
+							<li>A good choice of words could help convey the
+							intended message to the users (keywords).</li>
+							<li>Used in contents, menus, navigational buttons</li>
+							<br><br>
+						</ul>
+						
+						
+						
+							
+						
+						
+						
+						
+					<b><li id = "element2" >Graphic </li></b>
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;">
+							<li>Two-dimensional figure or illustration </li>
+							<li>Could be produced manually (by drawing, painting, carving, etc.) or by computer graphics technology. </li>
+							<li>Used in multimedia to show more clearly what a
+								particular information is all about (diagrams,
+								picture). </li>
+							<li>A Picture means a thousand words </li><br><br>
+						</ul>
+						
+					<b><li id = "element3">Audio </li></b>
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+							<li>Produced by vibration, as perceived by the sense of
+								hearing </li>
+							<li>In multimedia, audio could come in the form of
+								speech, sound effects and also music score. </li><br><br>
+						</ul>
+						
+					<b><li id = "element4">Animation </li></b>
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+							<li>The illusion of motion created by the consecutive
+							display of images of static elements. </li>
+							<li>In multimedia, animation is used to further
+								enhance / enriched the experience of the user to
+								further understand the information conveyed to
+								them.peech, sound effects and also music score. </li><br><br>
+						</ul>
+						
+					<b><li id = "element5">Video </li></b>
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+							<li>Is the technology of capturing, recording, processing,
+								transmitting, and reconstructing moving pictures. </li>
+							<li>Video is more towards photo realistic image
+								sequence / live recording as in comparison to
+								animation. </li>
+							<li>Video also takes a lot of storage space. So plan
+								carefully before you are going to use it.
+							</li><br><br>
+						</ul>
+				</ol>
+				
+				<h1 id = "lec5" style = "display: block;font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; margin-top: 3em;"> 
+				Interactive Multimedia</h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;">				
+				
+				<b>Interactive Multimedia</b> is when the user is given the option of controlling the
+				elements.<br><br>
+				
+				<b>Hyper Media</b>
+				is a combination of hypertext, graphics, audio, video,
+				(linked elements) and interactivity culminating in a
+				complete, non-linear computer-based experience.
+				
+				</p>
+				
+				<center><img class = "mminter" src="mminter.jpg"></center>
+				
+				
+				
+				<h1 id = "lec6" style = "display: block;font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; margin-top: 3em;"> 
+				Linear vs Non-Linear</h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-bottom: 1.5em;">				
+				
+				A Multimedia Project is identified as <b id = "lin" >Linear</b> when:
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: -1em; margin-left: 2em;" >			
+					<li>It is not interactive</li>
+					<li>User have no control over the content that is being
+					showed to them.</li>
+				</ul>
+				</p>
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;margin-bottom: 1.5em;">				
+				Example:
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: -1em; margin-left: 2em;" >
+					<li>A movie</li>
+					<li>A non-interactive lecture / demo show </li>
+				</ul>
+				</p>
+				
+				<br>
+				<br>
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-bottom: 1.5em; ">				
+				A Multimedia Project is identified as <b id = "nonlin">Non-Linear</b>
+				when:
+				
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: -1em; margin-left: 2em;" >		
+					<li>It is interactive</li>
+					<li>Users have control over the content that is being showed to them.</li>
+					<li>Users are given navigational control</li>
+				</ul>
+				</p>
+				
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;margin-bottom:1.5em">				
+				Example:
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: -1em; margin-left: 2em;" >		
+					<li>Games</li>
+					<li>Courseware</li>
+					<li>Interactive CD</li>
+				</ul>
+				</p>
+				
+				<h1 id = "lec7" style = "display: block;font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; margin-top: 3em;"> 
+				Authoring Tools</h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em;">				
+				
+				<b>Authoring Tools</b> are use to merge multimedia elements (text, audio,
+				graphic, animation, video) into a project. 
+				Designed to manage individual multimedia
+				elements and provide user interaction (if
+				required).
+				
+				</p>
+				
+				<center><img class = "mmuse" src="mmtools.jpg"></center>
+				
+				
+				<h1 id = "lec8" style = "display: block; font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; margin-top: 3em;"> 
+				Importance of Multimedia</h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				<p style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-right: 5em; margin-bottom: -1em;">				
+				
+				
+				
+				There are a number of fields where
+				multimedia could be of use. Examples are:
+				
+				</p>
+				<ol style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-top: 1.5em;" >
+					<b><li>Business</li></b>
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+							<li>Sales / Marketing Presentation</li>
+							<li>Trade show production</li>
+							<li>Staff Training Application</li>
+							<li>Company Kiosk</li>
+							<br><br>
+						</ul>
+					
+					
+					
+					
+					
+					
+					<b><li>Education</li></b>
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+							<li>Courseware / Simulations</li>
+							<li>E-Learning / Distance Learning</li>
+							<li>Information Searching</li>					
+							<br><br>
+						</ul>
+					
+					
+					<b><li>Entertainment</li></b>
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+							<li>Games (Leisure / Educational)</li>
+							<li>Movies</li>
+							<li>Video on Demand</li>
+							<li>Online</li>
+							<br><br>
+						</ul>
+					
+					
+					
+					
+					
+					<b><li>Home</li></b>
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+							<li>IPTV</li>
+							<li>Satellite TV</li>
+							<li>Games</li>
+							<br><br>
+						</ul>
+					
+
+					<b><li>Public Places</li></b>
+						<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+							<li>Information Kiosk</li>
+							<li>Smart Cards, Security</li>
+							<br><br>
+						</ul>
+				</ol>
+				
+			
+				
+				
+				
+				
+				<h1 id = "lec9" style = "display: block;font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; margin-top: 3em;"> 
+				Multimedia Products</h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				
+				<ol style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-top: 1.5em;" >
+					<b><li id = "prod1">Briefing Products</li></b>
+					
+						<ol type ="A" style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-top: 0.4em;" >	
+							<li> Small, straightforward, linear products used to present information quickly and concisely. </li>
+							<li>Characteristic of briefing product:</li>
+							
+								<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+									<li>Short Development Cycle</li>
+									<li>Limited Number of Presentations</li>
+									<li>Usage of text to present information with limited use of
+									graphic, audio and video.</li>
+									<li>Have few navigational controls. (mouse click and button
+									press to move from one page to another)</li>
+									<li>Content and the format are suitable for the audience and
+									fulfill the purpose of the presentation. </li>
+								</ul>
+								
+							<li>Good briefing presentation depends on:</li>
+								<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+									<li>The understanding of the presented subject.</li>
+									<li>Seamless integration of content.</li>
+									<li>Consistent layout</li>
+								</ul>
+								
+							<li>Example:</li>
+								<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+									<li>Corporate Presentation</li>
+									<li>Sales Presentation</li>
+									<li>Educational Lectures</li>
+								</ul>
+						</ol><br><br>
+						
+					<b><li id = "prod2">Reference Products</li></b>
+					
+						<ol type ="A" style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-top: 0.4em;" >	
+							<li>Often used for answering specific questions or for general browsing of
+							information. (stored on CD/ DVD ROM)</li>
+							<li>Characteristic of reference product:</li>
+								<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+									<li>Used by wide range of user (small – adult)</li>
+									<li>Have navigational menu, book marking, searching, printing utility.</li>
+								</ul>
+							
+							
+							
+							<li>2 Basic classes of reference product:</li>
+								<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+									<li>Generalized Content (dictionary/encyclopedia) - Broad treatment of content at a limited depth.</li>
+									<li>Detailed Content - Focus on specific area and provide extensive information.</li>
+								</ul>
+
+
+							
+							<li>Good usability and success depends on:</li>
+								<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+									<li>The developers understanding the body of information and
+									how the end user will want to access it.</li>
+									<li>Help function should always available to explain how to
+									access and use the information</li>
+								</ul>
+							
+							
+							
+							<li>Examples are electronic forms of:</li>
+								<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+									<li>Encyclopedia</li>
+									<li>Dictionaries</li>
+									<li>Cookbooks, Historica</li>
+								</ul>
+						</ol><br><br>	
+					
+					<b><li id = "prod3">Database Products</li></b>
+						<ol type ="A" style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-top: 0.4em;" >	
+							<li>Similar to reference product in a sense that large amount of information
+							are made available to the end user.</li>
+							<li>Focus on storing and accessing the actual data (multimedia data such
+							as text, graphic, audio, animation and video)</li>
+							<li>Characteristics of Database Products are:</li>
+								<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+									
+									
+									<li>Manages multimedia data (large data)</li>
+									<li>Descriptive finding methods</li>
+									<li>Content based search</li>
+									<li>Simultaneous access</li>
+									<li>Online database</li>
+									<li>Relational consistency in data management.</li>
+															
+								</ul>	
+									
+									
+									
+									
+							<li>Examples are:</li>
+								<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+					
+									<li>Google Search</li>
+									<li>Google Earth</li>
+									
+								</ul>	
+									
+									
+									
+									
+						</ol><br><br>
+
+							
+							
+
+
+
+
+
+
+
+
+
+
+					
+					<b><li id = "prod4">Education and Training Products</li></b>
+						<ol type ="A" style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-top: 0.4em;" >	
+					
+							<li>Similar to textbook or training manuals but have added media such as
+							audio, animation and video.</li>
+							<li>Make up a significant share of the multimedia market ranging from prekindergarten
+							to postgraduate offerings from technical to corporate
+							training products.</li>
+							<li>2 categories of reference product:</li>
+								<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+						
+									<li>Instructor Support Products</li>
+									<li>Standalone or Self-Paced Products</li>
+									<li>Combination Products</li>
+								</ul>
+							<li>Shares the same characteristics as Reference Product</li>
+						</ol><br><br>
+						
+						
+						
+						
+							
+					<b><li id = "prod5">Kiosk Products</li></b>
+						<ol type ="A" style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-top: 0.4em;" >	
+						
+							
+							<li>A product which is usually stationed at public places and allow the user
+							to find information interactively and also other types of transaction.</li>
+							<li>Characteristics of Kiosk Products:</li>
+								<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+								
+									<li>Limited target users and usage.</li>
+									<li>User friendly and easily used by user.</li>
+									<li>Fast response.</li>
+								</ul>
+								
+							<li>Categories of Kiosk:</li>
+								<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+						
+									<li>Point Of Information</li>
+									<li>Provide certain information (example map, timetable etc)</li>
+									<li>Point Of Sales System</li>
+									<li>Allow users to purchase or make orders</li>
+								</ul>	
+							<li>Example of Kiosk Products:</li>
+								<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+						
+									<li>Instant Photo Booth</li>
+									<li>Banking Kiosk (money deposit, cheque)</li>
+									<li>University Information Kiosk</li>
+								</ul>
+								
+						</ol><br><br>
+
+						
+						
+						
+						
+						
+						
+					<b><li id = "prod6">Entertainment & Games Products</li></b></b>
+						<ol type ="A" style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block; margin-top: 0.4em;" >	
+						
+							<li>Most popular</li>
+							<li>Shipped in the form of Interactive CD / DVD ROM.</li>
+							<li>Characteristics of E & G Products:</li>
+								<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+									<li>Immersive.</li>
+									<li>Requires constant feedback and interaction with the user.</li>
+									<li>Challenging and sometimes intriguing for user</li>
+									<li>Enabled online play for more than one user experience.</li>
+						</ol><br><br>
+				</ol>
+				
+
+				
+				
+
+		
+				
+				<h1 id = "lec10" style = "display: block;font-family: times new roman; font-size: 26px; font-weight: 200; margin-bottom: 0em; margin-top: 3em;"> 
+				Delivering Multimedia</h1>
+				<hr style = "border: 0.5px solid gray; margin-top: 0em;">
+				
+				
+				<ul style = "font-size: 16px; font-family: arial; color: black; text-align: left; display: block;   list-style-type: circle; margin-top: 0.4em; margin-left: 2em;" >
+					
+					<li>Large storage and bandwidth - for delivery and distribution</li>
+					<li>CD, DVD and Flash Drive</li>
+					<li>Broadband Internet</li>
+									
+				</ul>
+
+				<center><img class = "mminter" src="mmdeliver.jpg"></center>
+			
+				
+				
+				</div>
+				
+				
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</div>
+					  
+					  
+		  
+		  
+		  
+		  
+		  
+		  </article>
+		</section>
+
+	<footer>
+	  <b><p style = "font-size: 12px; font-family: arial; color: #3366CC ; text-align: center; margin-top: 0em; word-spacing: 2px;">TONIE ANNE C. MARTINEZ / ITC29 / 302I / 10:30AM - 1:30PM  </p></b>
+	</footer>
+
+	<body>
+<html>	
+	
